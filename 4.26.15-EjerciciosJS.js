@@ -19,16 +19,11 @@ const counterWords = [
 const repeatCounter = (counterWords) => {
   let repeated = [];
 
-  counterWords.forEach((word, i) => {
+  counterWords.forEach((word) => {
     repeated[word] = (repeated[word] || 0) + 1;
   });
   console.log(repeated);
 };
 
-// const finderName = (search) => {
-//     nameFinder.forEach((name, i) => {
-//       if (search === name) {
-//         console.log(name, i);
-//       }
-//     });
-//   };
+repeatCounter(counterWords);
+
